@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Page.h"
+#import "WebsiteCell.h"
+#import "WebViewController.h"
+#import "NetManager.h"
+#import "CoreDataManager.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController <UIPopoverPresentationControllerDelegate>
 
 
 @end

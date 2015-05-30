@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5025111B1737AC00982F9F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5025101B1737AC00982F9F /* WebViewController.m */; };
+		1A5025141B1737DB00982F9F /* WebsiteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5025131B1737DB00982F9F /* WebsiteCell.m */; };
+		1A50251D1B18A50500982F9F /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A50251C1B18A50500982F9F /* NetManager.m */; };
+		1A5025201B18A70800982F9F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A50251F1B18A70800982F9F /* CoreDataManager.m */; };
+		1A5025231B18B6E600982F9F /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5025221B18B6E600982F9F /* Page.m */; };
 		A8002C3F1AC8B173001B2503 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8002C3E1AC8B173001B2503 /* main.m */; };
 		A8002C421AC8B173001B2503 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8002C411AC8B173001B2503 /* AppDelegate.m */; };
 		A8002C451AC8B173001B2503 /* HW_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8002C431AC8B173001B2503 /* HW_CoreData.xcdatamodeld */; };
@@ -28,6 +33,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A50250F1B1737AC00982F9F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1A5025101B1737AC00982F9F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1A5025121B1737DB00982F9F /* WebsiteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteCell.h; sourceTree = "<group>"; };
+		1A5025131B1737DB00982F9F /* WebsiteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteCell.m; sourceTree = "<group>"; };
+		1A50251B1B18A50500982F9F /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		1A50251C1B18A50500982F9F /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		1A50251E1B18A70800982F9F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		1A50251F1B18A70800982F9F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		1A5025211B18B6E600982F9F /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		1A5025221B18B6E600982F9F /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
 		A8002C391AC8B173001B2503 /* HW_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8002C3D1AC8B173001B2503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8002C3E1AC8B173001B2503 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +77,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5025241B18C06900982F9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8002C401AC8B173001B2503 /* AppDelegate.h */,
+				A8002C411AC8B173001B2503 /* AppDelegate.m */,
+				1A50251E1B18A70800982F9F /* CoreDataManager.h */,
+				1A50251F1B18A70800982F9F /* CoreDataManager.m */,
+				1A50251B1B18A50500982F9F /* NetManager.h */,
+				1A50251C1B18A50500982F9F /* NetManager.m */,
+				1A5025211B18B6E600982F9F /* Page.h */,
+				1A5025221B18B6E600982F9F /* Page.m */,
+				A8002C431AC8B173001B2503 /* HW_CoreData.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1A5025251B18C07500982F9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8002C461AC8B173001B2503 /* ViewController.h */,
+				A8002C471AC8B173001B2503 /* ViewController.m */,
+				1A50250F1B1737AC00982F9F /* WebViewController.h */,
+				1A5025101B1737AC00982F9F /* WebViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1A5025261B18C07E00982F9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A5025121B1737DB00982F9F /* WebsiteCell.h */,
+				1A5025131B1737DB00982F9F /* WebsiteCell.m */,
+				A8002C491AC8B173001B2503 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		A8002C301AC8B173001B2503 = {
 			isa = PBXGroup;
 			children = (
@@ -83,14 +135,11 @@
 		A8002C3B1AC8B173001B2503 /* HW_CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				A8002C401AC8B173001B2503 /* AppDelegate.h */,
-				A8002C411AC8B173001B2503 /* AppDelegate.m */,
-				A8002C461AC8B173001B2503 /* ViewController.h */,
-				A8002C471AC8B173001B2503 /* ViewController.m */,
-				A8002C491AC8B173001B2503 /* Main.storyboard */,
+				1A5025241B18C06900982F9F /* Model */,
+				1A5025251B18C07500982F9F /* Controller */,
+				1A5025261B18C07E00982F9F /* View */,
 				A8002C4C1AC8B173001B2503 /* Images.xcassets */,
 				A8002C4E1AC8B173001B2503 /* LaunchScreen.xib */,
-				A8002C431AC8B173001B2503 /* HW_CoreData.xcdatamodeld */,
 				A8002C3C1AC8B173001B2503 /* Supporting Files */,
 			);
 			path = HW_CoreData;
@@ -223,9 +272,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8002C421AC8B173001B2503 /* AppDelegate.m in Sources */,
+				1A50251D1B18A50500982F9F /* NetManager.m in Sources */,
+				1A5025111B1737AC00982F9F /* WebViewController.m in Sources */,
+				1A5025231B18B6E600982F9F /* Page.m in Sources */,
+				1A5025201B18A70800982F9F /* CoreDataManager.m in Sources */,
 				A8002C3F1AC8B173001B2503 /* main.m in Sources */,
 				A8002C481AC8B173001B2503 /* ViewController.m in Sources */,
 				A8002C451AC8B173001B2503 /* HW_CoreData.xcdatamodeld in Sources */,
+				1A5025141B1737DB00982F9F /* WebsiteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +470,7 @@
 				A8002C611AC8B173001B2503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8002C621AC8B173001B2503 /* Build configuration list for PBXNativeTarget "HW_CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +479,7 @@
 				A8002C641AC8B173001B2503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
